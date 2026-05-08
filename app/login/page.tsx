@@ -1,8 +1,7 @@
-import dynamicImport from 'next/dynamic';
+import { Suspense } from 'react';
+import LoginClient from './LoginClient';
 
 export const dynamic = 'force-dynamic';
-
-const LoginClient = dynamicImport(() => import('./LoginClient'), { ssr: false });
 
 export default function LoginPage() {
   return (
@@ -12,7 +11,9 @@ export default function LoginPage() {
           <div className="mast text-4xl font-semibold">The Joni Times</div>
           <div className="text-xs uppercase tracking-[0.2em] text-muted mt-1">Admin</div>
         </div>
-        <LoginClient />
+        <Suspense fallback={<div className="card p-6 text-center text-sm text-muted">Loading…</div>}>
+          <LoginClient />
+        </Suspense>
         <p className="text-xs text-faint text-center mt-6">Authorized personnel only.</p>
       </div>
     </div>

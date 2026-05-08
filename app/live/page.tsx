@@ -1,9 +1,7 @@
 import Shell from '../../components/Shell';
-import dynamicImport from 'next/dynamic';
+import LiveClient from './LiveClient';
 
 export const dynamic = 'force-dynamic';
-
-const LiveClient = dynamicImport(() => import('./LiveClient'), { ssr: false });
 
 export default function LivePage() {
   return (
