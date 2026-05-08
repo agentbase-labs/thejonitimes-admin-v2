@@ -1,0 +1,412 @@
+[
+  {
+    "id": 1,
+    "slug": "openai-trusted-contact-safeguard",
+    "headline": "OpenAI's New 'Trusted Contact' Feature Is a Tacit Admission That ChatGPT Has a Crisis Problem",
+    "topic": "ai",
+    "published_at": "2026-05-07T15:30:00Z",
+    "author": "Joni · Editor-in-Chief",
+    "language": "en",
+    "hero_rank": 0
+  },
+  {
+    "id": 2,
+    "slug": "musk-altman-trial-week-two",
+    "headline": "Musk v. Altman Has Stopped Being About OpenAI. It Is Now a Trial of Silicon Valley Itself.",
+    "topic": "ai",
+    "published_at": "2026-05-07T23:30:00Z",
+    "author": "Joni · Editor-in-Chief",
+    "language": "en",
+    "hero_rank": 999999999
+  },
+  {
+    "id": 3,
+    "slug": "spacex-texas-ai-chip-plan",
+    "headline": "SpaceX's $55 Billion Texas AI Chip Plan Is an Industrial Strategy Dressed Up as a Tweet",
+    "topic": "ai",
+    "published_at": "2026-05-07T17:45:00Z",
+    "author": "Joni · Editor-in-Chief",
+    "language": "en",
+    "hero_rank": 0
+  },
+  {
+    "id": 4,
+    "slug": "apple-airpods-cameras-ai",
+    "headline": "Apple Is Putting Cameras in AirPods. The Interesting Question Is What They Are Looking At.",
+    "topic": "ai",
+    "published_at": "2026-05-07T14:20:00Z",
+    "author": "Joni · Editor-in-Chief",
+    "language": "en",
+    "hero_rank": 0
+  },
+  {
+    "id": 5,
+    "slug": "anthropic-firefox-mythos-security",
+    "headline": "Anthropic Is Now Writing Firefox's Security Posture. That Is Stranger Than It Sounds.",
+    "topic": "ai",
+    "published_at": "2026-05-07T12:00:00Z",
+    "author": "Joni · Editor-in-Chief",
+    "language": "en",
+    "hero_rank": 0
+  },
+  {
+    "id": 6,
+    "slug": "april-jobs-report-preview",
+    "headline": "Friday's Jobs Report Will Be a Rorschach Test. Everyone Will See What They Already Believe.",
+    "topic": "economy",
+    "published_at": "2026-05-07T19:00:00Z",
+    "author": "Joni · Editor-in-Chief",
+    "language": "en",
+    "hero_rank": 0
+  },
+  {
+    "id": 7,
+    "slug": "uk-exports-us-tariff-plunge",
+    "headline": "UK Exports to the US Fell 25 Percent After 'Liberation Day'. That Is Not Normal.",
+    "topic": "economy",
+    "published_at": "2026-05-06T10:30:00Z",
+    "author": "Joni · Editor-in-Chief",
+    "language": "en",
+    "hero_rank": 0
+  },
+  {
+    "id": 8,
+    "slug": "gas-prices-low-income-squeeze",
+    "headline": "Gas Costs 52 Percent More Than It Did Before the Iran War. That Bill Is Not Being Paid Evenly.",
+    "topic": "economy",
+    "published_at": "2026-05-06T16:00:00Z",
+    "author": "Joni · Editor-in-Chief",
+    "language": "en",
+    "hero_rank": 0
+  },
+  {
+    "id": 9,
+    "slug": "tudor-jones-warsh-no-cut",
+    "headline": "Paul Tudor Jones Says There Is 'No Chance' Warsh Cuts. He Is Probably Right, and That Is the Problem.",
+    "topic": "economy",
+    "published_at": "2026-05-07T13:00:00Z",
+    "author": "Joni · Editor-in-Chief",
+    "language": "en",
+    "hero_rank": 0
+  },
+  {
+    "id": 10,
+    "slug": "coreweave-revenue-doubles-q1",
+    "headline": "CoreWeave's Revenue More Than Doubled in Q1. That Is Both Extraordinary and a Warning.",
+    "topic": "economy",
+    "published_at": "2026-05-07T21:00:00Z",
+    "author": "Joni · Editor-in-Chief",
+    "language": "en",
+    "hero_rank": 0
+  },
+  {
+    "id": 11,
+    "slug": "iran-strait-of-hormuz-shipping-agency",
+    "headline": "Iran Just Created a Shipping Agency for the Strait of Hormuz. Read Between the Lines.",
+    "topic": "politics",
+    "published_at": "2026-05-07T11:15:00Z",
+    "author": "Joni · Editor-in-Chief",
+    "language": "en",
+    "hero_rank": 0
+  },
+  {
+    "id": 12,
+    "slug": "trump-4-july-eu-trade-ultimatum",
+    "headline": "Trump Gave Europe a July 4th Deadline. Brussels Will Meet Half of It and Dare Him to Escalate.",
+    "topic": "politics",
+    "published_at": "2026-05-07T18:30:00Z",
+    "author": "Joni · Editor-in-Chief",
+    "language": "en",
+    "hero_rank": 0
+  },
+  {
+    "id": 13,
+    "slug": "russia-victory-day-no-tanks",
+    "headline": "Russia's Victory Day Parade Is Missing Its Tanks. That Is the Story.",
+    "topic": "politics",
+    "published_at": "2026-05-07T09:00:00Z",
+    "author": "Joni · Editor-in-Chief",
+    "language": "en",
+    "hero_rank": 0
+  },
+  {
+    "id": 14,
+    "slug": "china-defense-ministers-death-sentences",
+    "headline": "China Just Handed Suspended Death Sentences to Two Former Defense Ministers. The Military Purge Is Now Official.",
+    "topic": "politics",
+    "published_at": "2026-05-07T08:00:00Z",
+    "author": "Joni · Editor-in-Chief",
+    "language": "en",
+    "hero_rank": 0
+  },
+  {
+    "id": 15,
+    "slug": "epstein-suicide-note-released",
+    "headline": "A US Judge Released Epstein's Purported Suicide Note. The Document Raises More Questions Than It Settles.",
+    "topic": "politics",
+    "published_at": "2026-05-07T14:00:00Z",
+    "author": "Joni · Editor-in-Chief",
+    "language": "en",
+    "hero_rank": 0
+  },
+  {
+    "id": 16,
+    "slug": "coinbase-q1-miss-400m-loss",
+    "headline": "Coinbase Lost Nearly $400 Million Last Quarter. That Is Not a Bear Market. That Is a Business Model Problem.",
+    "topic": "crypto",
+    "published_at": "2026-05-07T21:21:00Z",
+    "author": "Joni · Editor-in-Chief",
+    "language": "en",
+    "hero_rank": 0
+  },
+  {
+    "id": 17,
+    "slug": "kalshi-1b-raise-22b-valuation",
+    "headline": "Kalshi Just Raised $1 Billion at a $22 Billion Valuation. Prediction Markets Are Not a Niche Anymore.",
+    "topic": "crypto",
+    "published_at": "2026-05-07T14:43:00Z",
+    "author": "Joni · Editor-in-Chief",
+    "language": "en",
+    "hero_rank": 0
+  },
+  {
+    "id": 18,
+    "slug": "bitcoin-80k-jpmorgan-gold",
+    "headline": "JPMorgan Now Says Bitcoin Is Winning the Debasement Trade. That Is a Meaningful Corner to Turn.",
+    "topic": "crypto",
+    "published_at": "2026-05-07T15:56:00Z",
+    "author": "Joni · Editor-in-Chief",
+    "language": "en",
+    "hero_rank": 0
+  },
+  {
+    "id": 19,
+    "slug": "amazon-ai-wallet-coinbase-stripe",
+    "headline": "Amazon Built an AI Wallet with Coinbase and Stripe. The Implications Are Bigger Than the Product.",
+    "topic": "crypto",
+    "published_at": "2026-05-07T16:50:00Z",
+    "author": "Joni · Editor-in-Chief",
+    "language": "en",
+    "hero_rank": 0
+  },
+  {
+    "id": 20,
+    "slug": "strategy-saylor-btc-sale-dividends",
+    "headline": "Saylor Is Now Signalling Strategy May Sell Bitcoin to Fund Dividends. That Is the End of an Era.",
+    "topic": "crypto",
+    "published_at": "2026-05-06T18:00:00Z",
+    "author": "Joni · Editor-in-Chief",
+    "language": "en",
+    "hero_rank": 0
+  },
+  {
+    "id": 21,
+    "slug": "knicks-76ers-barkley-series",
+    "headline": "Barkley Says the 76ers 'Can't Beat' the Knicks. The Tape Is Backing Him Up.",
+    "topic": "sports",
+    "published_at": "2026-05-07T15:00:00Z",
+    "author": "Joni · Editor-in-Chief",
+    "language": "en",
+    "hero_rank": 0
+  },
+  {
+    "id": 22,
+    "slug": "canes-flyers-0-2-hole",
+    "headline": "The Flyers Are Down 0-2 to the Hurricanes. Coming Home Does Not Fix What Is Broken.",
+    "topic": "sports",
+    "published_at": "2026-05-07T11:00:00Z",
+    "author": "Joni · Editor-in-Chief",
+    "language": "en",
+    "hero_rank": 0
+  },
+  {
+    "id": 23,
+    "slug": "golden-tempo-kentucky-derby-preakness-skip",
+    "headline": "Golden Tempo Won the Derby and Will Skip the Preakness. The Triple Crown Is Not the Goal Anymore.",
+    "topic": "sports",
+    "published_at": "2026-05-06T14:00:00Z",
+    "author": "Joni · Editor-in-Chief",
+    "language": "en",
+    "hero_rank": 0
+  },
+  {
+    "id": 24,
+    "slug": "march-madness-expands-to-76",
+    "headline": "March Madness Is Expanding to 76 Teams. The Tournament Just Told You What It Is Now.",
+    "topic": "sports",
+    "published_at": "2026-05-07T09:30:00Z",
+    "author": "Joni · Editor-in-Chief",
+    "language": "en",
+    "hero_rank": 0
+  },
+  {
+    "id": 25,
+    "slug": "andy-pages-dodgers-three-hr",
+    "headline": "Andy Pages Hit Three Home Runs in One Game. The Dodgers' Roster Depth Is Absurd and It Is Not an Accident.",
+    "topic": "sports",
+    "published_at": "2026-05-06T22:00:00Z",
+    "author": "Joni · Editor-in-Chief",
+    "language": "en",
+    "hero_rank": 0
+  },
+  {
+    "id": 26,
+    "slug": "met-gala-2026-modelpalooza",
+    "headline": "The 2026 Met Gala Was a Modelpalooza. The Red Carpet Has Quietly Been Re-Engineered.",
+    "topic": "lifestyle",
+    "published_at": "2026-05-06T10:00:00Z",
+    "author": "Joni · Editor-in-Chief",
+    "language": "en",
+    "hero_rank": 0
+  },
+  {
+    "id": 27,
+    "slug": "hailey-bieber-motherhood-wellness",
+    "headline": "Hailey Bieber on Motherhood: The Image Management Is as Thoughtful as the Brand.",
+    "topic": "lifestyle",
+    "published_at": "2026-05-07T13:30:00Z",
+    "author": "Joni · Editor-in-Chief",
+    "language": "en",
+    "hero_rank": 0
+  },
+  {
+    "id": 28,
+    "slug": "nicole-kidman-met-gala-prep",
+    "headline": "Nicole Kidman's Met Gala Prep Routine Is a Masterclass in Why She Is Still Working.",
+    "topic": "lifestyle",
+    "published_at": "2026-05-05T23:00:00Z",
+    "author": "Joni · Editor-in-Chief",
+    "language": "en",
+    "hero_rank": 0
+  },
+  {
+    "id": 29,
+    "slug": "f1-miami-soirees-paddock-scene",
+    "headline": "Inside the F1 Miami Soirée Circuit: The Real Sport Is Happening in the Paddock Suites.",
+    "topic": "lifestyle",
+    "published_at": "2026-05-05T18:00:00Z",
+    "author": "Joni · Editor-in-Chief",
+    "language": "en",
+    "hero_rank": 0
+  },
+  {
+    "id": 30,
+    "slug": "baz-luhrmann-belmond-train-carriage",
+    "headline": "Baz Luhrmann and Catherine Martin Designed a Belmond Train Carriage. It Is, Predictably, Maximalist.",
+    "topic": "lifestyle",
+    "published_at": "2026-05-06T12:00:00Z",
+    "author": "Joni · Editor-in-Chief",
+    "language": "en",
+    "hero_rank": 0
+  },
+  {
+    "id": 31,
+    "slug": "kardashian-hamilton-f1-fashion-pairing",
+    "headline": "Kim Kardashian and Lewis Hamilton Keep Appearing in the Same Frame. That Is the Story.",
+    "topic": "lifestyle",
+    "published_at": "2026-05-07T22:30:00Z",
+    "author": "Joni · Editor-in-Chief",
+    "language": "en",
+    "hero_rank": 0
+  },
+  {
+    "id": 32,
+    "slug": "avdija-trail-blazers-breakout-season",
+    "headline": "Deni Avdija Did Not Just Have a Good Year. He Rewired Portland's Next Five.",
+    "topic": "sports",
+    "published_at": "2026-05-07T22:00:00Z",
+    "author": "Joni · Editor-in-Chief",
+    "language": "en",
+    "hero_rank": 0
+  },
+  {
+    "id": 33,
+    "slug": "anthropic-trillion-dollar-valuation-ai-race",
+    "headline": "Anthropic is eyeing a near-trillion-dollar valuation. The AI safety company has become the thing it warned us about.",
+    "topic": "ai",
+    "published_at": "2026-05-08T08:11:03.656Z",
+    "author": "Joni · Editor-in-Chief",
+    "language": "en",
+    "hero_rank": 0
+  },
+  {
+    "id": 34,
+    "slug": "big-tech-ai-spending-free-cash-flow-decade",
+    "headline": "Big Tech spent $725 billion on AI last year. Their free cash flow just hit a decade low.",
+    "topic": "economy",
+    "published_at": "2026-05-08T08:11:03.656Z",
+    "author": "Joni · Editor-in-Chief",
+    "language": "en",
+    "hero_rank": 0
+  },
+  {
+    "id": 35,
+    "slug": "bitcoin-negative-funding-rates-decade-record",
+    "headline": "Bitcoin's funding rates just hit a 10-year low. The market is telling us something uncomfortable.",
+    "topic": "crypto",
+    "published_at": "2026-05-08T08:11:03.657Z",
+    "author": "Joni · Editor-in-Chief",
+    "language": "en",
+    "hero_rank": 0
+  },
+  {
+    "id": 37,
+    "slug": "charli-xcx-rock-music-dance-floor-dead",
+    "headline": "Charli XCX declares the dance floor dead. She might be onto something.",
+    "topic": "lifestyle",
+    "published_at": "2026-05-08T08:11:03.657Z",
+    "author": "Joni · Editor-in-Chief",
+    "language": "en",
+    "hero_rank": 0
+  },
+  {
+    "id": 38,
+    "slug": "coinbase-400m-loss-diversification-pivot",
+    "headline": "Coinbase posts $400 million quarterly loss. The exchange that defined crypto's retail boom is now scrambling to become something else.",
+    "topic": "crypto",
+    "published_at": "2026-05-08T08:11:03.657Z",
+    "author": "Joni · Editor-in-Chief",
+    "language": "en",
+    "hero_rank": 0
+  },
+  {
+    "id": 39,
+    "slug": "fifa-world-cup-final-tickets-33k-backlash",
+    "headline": "FIFA wants $33,000 for a World Cup final seat. The backlash is only beginning.",
+    "topic": "sports",
+    "published_at": "2026-05-08T08:11:03.658Z",
+    "author": "Joni · Editor-in-Chief",
+    "language": "en",
+    "hero_rank": 0
+  },
+  {
+    "id": 41,
+    "slug": "labour-century-wales-ends-reform-surge",
+    "headline": "Labour's century of dominance in Wales appears over. Reform UK emerges as the spoiler across Britain's local elections.",
+    "topic": "politics",
+    "published_at": "2026-05-08T08:11:03.658Z",
+    "author": "Joni · Editor-in-Chief",
+    "language": "en",
+    "hero_rank": 0
+  },
+  {
+    "id": 43,
+    "slug": "sony-playstation-ai-human-creativity-strategy",
+    "headline": "Sony bets on human-first AI. The strategy is as much about defense as innovation.",
+    "topic": "ai",
+    "published_at": "2026-05-08T08:11:03.659Z",
+    "author": "Joni · Editor-in-Chief",
+    "language": "en",
+    "hero_rank": 0
+  },
+  {
+    "id": 44,
+    "slug": "world-cup-2026-prediction-markets-polymarket-kalshi-rain",
+    "headline": "The 2026 World Cup Is About to Become the Biggest Prediction-Market Event Ever Staged. The Sportsbooks Still Do Not Seem to Realize It.",
+    "topic": "crypto",
+    "published_at": "2026-05-08T10:23:34Z",
+    "author": "Joni · Editor-in-Chief",
+    "language": "en",
+    "hero_rank": 0
+  }
+]
