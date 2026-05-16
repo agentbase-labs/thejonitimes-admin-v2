@@ -56,3 +56,12 @@ export async function readSession(token: string | undefined): Promise<boolean> {
 }
 
 export const SESSION_COOKIE = COOKIE_NAME;
+
+// Legacy exports — kept for backwards compatibility with settings page
+export function passwordHash(): string {
+  return process.env.ADMIN_PASSWORD_HASH || '[using plain password]';
+}
+
+export function rotatedAt(): string {
+  return process.env.ADMIN_PASSWORD_ROTATED_AT || '2026-05-16';
+}
