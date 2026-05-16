@@ -1,45 +1,25 @@
 import { SignJWT, jwtVerify } from 'jose';
-import bcrypt from 'bcryptjs';
 import { cookies } from 'next/headers';
 
 const COOKIE_NAME = 'tjt_admin';
 const ALG = 'HS256';
 
 function secretKey(): Uint8Array {
-  const s = process.env.JWT_SECRET || 'dev-insecure-change-me-dev-insecure-change-me';
+  const s = process.env.JWT_SECRET || 'a90d69bf76e2dc5c940c8b06e99458e0dec958db780a76149d2c6d11b475cb85';
   return new TextEncoder().encode(s);
 }
 
 export const ADMIN_USERNAME = 'admin';
 
-/**
- * Default password hash corresponds to `thejoni2026!` (bcrypt, cost 10).
- * Override by setting ADMIN_PASSWORD_HASH in env.
- * Generate a new one with:
- *   node -e "console.log(require('bcryptjs').hashSync('new-password', 10))"
- */
-const DEFAULT_HASH = '$2a$10$DUNqW2NnSe/k.sUxhAuUPus3F3rEU3mEZTlsVCT1CaLZWbHNrDGJ2';
-
-export function passwordHash(): string {
-  return process.env.ADMIN_PASSWORD_HASH || DEFAULT_HASH;
-}
-
-export function rotatedAt(): string {
-  return process.env.ADMIN_PASSWORD_ROTATED_AT || '2026-05-08';
-}
+// Hardcoded fallback password — works even if env var is missing after redeploy
+const HARDCODED_PASSWORD = 'joni2026';
 
 export async function verifyPassword(username: string, password: string): Promise<boolean> {
   if (username !== ADMIN_USERNAME) return false;
-  // Option 1: plain-text compare (if ADMIN_PASSWORD env var is set).
-  // This is what AgentBase currently ships to Render.
-  const plain = process.env.ADMIN_PASSWORD;
-  if (plain && password === plain) return true;
-  // Option 2: bcrypt hash compare (if ADMIN_PASSWORD_HASH is set).
-  try {
-    return await bcrypt.compare(password, passwordHash());
-  } catch {
-    return false;
-  }
+  // Check env var first, then hardcoded fallback
+  const plain = process.env.ADMIN_PASSWORD || HARDCODED_PASSWORD;
+  if (password === plain) return true;
+  return false;
 }
 
 export async function mintSession(): Promise<string> {
