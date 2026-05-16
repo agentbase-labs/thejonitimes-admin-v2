@@ -43,20 +43,19 @@ export type ArticleMeta = {
   author: string;
   language: string;
   hero_rank: number | null;
+  subject_name?: string | null;
 };
 
-let _articlesCache: ArticleMeta[] | null = null;
-
+// No in-memory cache — re-read the JSON snapshot on every call so the admin
+// dashboard reflects the latest sync from the live SQLite DB.
 export function articlesList(): ArticleMeta[] {
-  if (_articlesCache) return _articlesCache;
   try {
     const p = path.join(process.cwd(), 'data', 'articles.json');
-    if (!fs.existsSync(p)) { _articlesCache = []; return _articlesCache; }
-    _articlesCache = JSON.parse(fs.readFileSync(p, 'utf8')) as ArticleMeta[];
+    if (!fs.existsSync(p)) return [];
+    return JSON.parse(fs.readFileSync(p, 'utf8')) as ArticleMeta[];
   } catch {
-    _articlesCache = [];
+    return [];
   }
-  return _articlesCache;
 }
 
 export function articleBySlug(slug: string): ArticleMeta | null {
