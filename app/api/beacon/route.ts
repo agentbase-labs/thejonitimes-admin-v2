@@ -120,3 +120,30 @@ export async function POST(req: NextRequest) {
 
   return new NextResponse(null, { status: 204, headers: corsHeaders });
 }
+
+// GET endpoint — 1x1 transparent pixel fallback for blocked POST environments
+export async function GET(req: NextRequest) {
+  const url = new URL(req.url);
+  const path = url.searchParams.get('p') || '/';
+  const sid = url.searchParams.get('s') || '';
+  const country = (url.searchParams.get('c') || 'XX').toUpperCase().slice(0, 2);
+  const ua = req.headers.get('user-agent') || '';
+  const ts = Math.floor(Date.now() / 1000);
+  const parsed = new UAParser(ua).getResult();
+  const device = deriveDevice(ua, parsed);
+  const browser = deriveBrowser(parsed);
+  const slug = deriveSlug(path);
+  const lang = deriveLang(path);
+  try {
+    await analytics().query(
+      `INSERT INTO pageviews (ts, path, referrer, country, user_agent, device, browser, session_id, slug, lang)
+       VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)`,
+      [ts, path, '', country, ua, device, browser, sid, slug, lang],
+    );
+  } catch {}
+  const pixel = Buffer.from('R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7', 'base64');
+  return new NextResponse(pixel, {
+    status: 200,
+    headers: { ...corsHeaders, 'Content-Type': 'image/gif', 'Cache-Control': 'no-store' },
+  });
+}
