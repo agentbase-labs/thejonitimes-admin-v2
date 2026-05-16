@@ -88,9 +88,15 @@ export async function POST(req: NextRequest) {
   const ts = Math.floor(Date.now() / 1000);
 
   // Country: prefer Cloudflare header, then client-sent country, then XX
-  const cfCountry = req.headers.get('cf-ipcountry');
+  // Client-sent country (from timezone detection) takes priority over cf-ipcountry
+  // because cf-ipcountry reflects Cloudflare's edge location (usually US), not the visitor's real IP.
+  const cfCountry = req.headers.get('cf-ipcountry') || '';
   const clientCountry = typeof body.country === 'string' ? body.country.toUpperCase().slice(0, 2) : '';
-  const country = (cfCountry && cfCountry !== 'XX' ? cfCountry : clientCountry || 'XX').toUpperCase().slice(0, 2);
+  // Prefer client country if provided and not EU aggregate; fallback to cf-ipcountry; fallback to XX
+  const country = (clientCountry && clientCountry !== 'EU' && clientCountry !== 'XX'
+    ? clientCountry
+    : (cfCountry && cfCountry !== 'XX' ? cfCountry : clientCountry || 'XX')
+  ).toUpperCase().slice(0, 2);
 
   // UA: prefer client-sent ua (more reliable than request header for beacon), fallback to header
   const clientUa = typeof body.ua === 'string' ? body.ua.slice(0, 500) : '';
