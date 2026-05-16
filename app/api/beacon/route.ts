@@ -18,7 +18,6 @@ function limited(ip: string): boolean {
   if (cur.count > 60) return true;
   return false;
 }
-// ----------------------------------------------------------
 
 function pickIP(req: NextRequest): string {
   const xf = req.headers.get('x-forwarded-for');
@@ -88,8 +87,15 @@ export async function POST(req: NextRequest) {
   const sid = typeof body.sid === 'string' ? body.sid.slice(0, 64) : '';
   const ts = Math.floor(Date.now() / 1000);
 
-  const country = (req.headers.get('cf-ipcountry') || 'XX').toUpperCase().slice(0, 2);
-  const ua = (req.headers.get('user-agent') || '').slice(0, 500);
+  // Country: prefer Cloudflare header, then client-sent country, then XX
+  const cfCountry = req.headers.get('cf-ipcountry');
+  const clientCountry = typeof body.country === 'string' ? body.country.toUpperCase().slice(0, 2) : '';
+  const country = (cfCountry && cfCountry !== 'XX' ? cfCountry : clientCountry || 'XX').toUpperCase().slice(0, 2);
+
+  // UA: prefer client-sent ua (more reliable than request header for beacon), fallback to header
+  const clientUa = typeof body.ua === 'string' ? body.ua.slice(0, 500) : '';
+  const ua = (clientUa || req.headers.get('user-agent') || '').slice(0, 500);
+
   const parsed = new UAParser(ua).getResult();
   const device = deriveDevice(ua, parsed);
   const browser = deriveBrowser(parsed);
